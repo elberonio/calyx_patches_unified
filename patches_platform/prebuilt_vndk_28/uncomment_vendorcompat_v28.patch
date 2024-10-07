@@ -1,0 +1,37 @@
+diff --git a/prebuilts/vndk/v28/Android.bp b/prebuilts/vndk/v28/Android.bp
+index 0123456..789abcd 100644
+--- a/prebuilts/vndk/v28/Android.bp
++++ b/prebuilts/vndk/v28/Android.bp
+@@ -124,11 +124,11 @@
+ 
+ // Defining prebuilt libraries for the compatibility of old vendor modules
+-//cc_prebuilt_library_shared {
+-//    name: "libprotobuf-cpp-lite-vendorcompat",
+-//    stem: "libprotobuf-cpp-lite",
+-//    vendor: true,
+-//    // These are already stripped, and restripping them just issues diagnostics.
++cc_prebuilt_library_shared {
++    name: "libprotobuf-cpp-lite-vendorcompat",
++    stem: "libprotobuf-cpp-lite",
++    vendor: true,
++    // These are already stripped, and restripping them just issues diagnostics.
+     strip: {
+         none: true,
+     },
+@@ -154,11 +154,11 @@
+ }
+ 
+-//cc_prebuilt_library_shared {
+-//    name: "libprotobuf-cpp-full-vendorcompat",
+-//    stem: "libprotobuf-cpp-full",
+-//    vendor: true,
+-//    // These are already stripped, and restripping them just issues diagnostics.
++cc_prebuilt_library_shared {
++    name: "libprotobuf-cpp-full-vendorcompat",
++    stem: "libprotobuf-cpp-full",
++    vendor: true,
++    // These are already stripped, and restripping them just issues diagnostics.
+     strip: {
+         none: true,
+     },
+
